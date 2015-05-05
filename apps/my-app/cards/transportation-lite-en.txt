@@ -1,0 +1,3 @@
+bike	transportation/bike.jpg	transportation/bike.mp3
+boat	transportation/boat.jpg	transportation/boat.mp3
+bus	transportation/bus.jpg	transportation/bus.mp3

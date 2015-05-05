@@ -1,0 +1,3 @@
+beach	nature/beach.jpg	nature/beach.mp3
+clouds	nature/clouds.jpg	nature/clouds.mp3
+desert	nature/desert.jpg	nature/desert.mp3

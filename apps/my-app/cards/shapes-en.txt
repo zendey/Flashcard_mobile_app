@@ -1,0 +1,3 @@
+circle	shapes/circle.jpg	shapes/circle.mp3
+crescent	shapes/crescent.jpg	shapes/crescent.mp3
+diamond	shapes/diamond.jpg	shapes/diamond.mp3

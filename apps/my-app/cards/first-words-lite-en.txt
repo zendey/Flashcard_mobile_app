@@ -1,0 +1,3 @@
+all gone	first-words/all-gone.jpg	first-words/all-gone.mp3
+baby	first-words/baby.jpg	first-words/baby.mp3
+ball	first-words/ball.jpg	first-words/ball.mp3

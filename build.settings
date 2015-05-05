@@ -1,0 +1,100 @@
+-----------------------------------------------------------------------------------------
+--
+-- build.settings
+-- Build settings for Corona app.
+--
+-----------------------------------------------------------------------------------------
+
+settings = 
+{
+	-- Excludes certain directories from the build.
+	excludeFiles = 
+	
+	{	
+		-- Comment out the current app that is activated.
+		all = { 
+				"unused/*/",
+			--	"apps/my-app/*/",
+				"apps/sample-app/*/",
+			},
+		
+		iphone = { "Icon-*dpi.png", "audio/*.ogg", "*.psd" },
+		android = { "Icon.png", "*@2x.png", "*@2x.jpg", "audio/*.m4a", "*.psd" },
+	},
+
+	build =
+	{
+		neverStripDebugInfo = true,
+	},	
+	
+	orientation = 
+	{
+		default = "landscapeRight",
+		supported = { "landscapeRight" },
+		-- supported = { "landscapeRight", "portrait", "landscapeLeft", "portraitUpsideDown" },
+	},
+
+	plugins = 
+	{
+		--[[ Flurry analytics
+		["CoronaProvider.analytics.flurry"] =
+		{
+			publisherId = "",
+		},
+        ["plugin.google.play.services"] =
+        {
+            publisherId = "com.coronalabs",
+        },
+		]]--
+	},
+
+	iphone = 
+	{
+		plist = 
+		{
+			UIAppFonts =
+            {
+                -- "",   							-- Add custom fonts here.
+            },
+			UIStatusBarHidden = false,
+			UIPrerenderedIcon = true, 				-- set to false for "shine" overlay
+			UIApplicationExitsOnSuspend = false, 	-- uncomment to quit app on suspend
+
+ 		           --[[
+  		          -- iOS app URL schemes:
+   		         CFBundleURLTypes =
+   		         {
+ 		               {
+ 		                   CFBundleURLSchemes =
+  		                  {
+     		                  	"fbXXXXXXXXXXXXXX", 	-- example scheme for facebook
+      		                  	"coronasdkapp", 		-- example second scheme
+   		                 }
+  		              }
+  		          }
+  		          --]]
+			CFBundleLocalizations =
+			{
+				"English",
+				"French",
+				"German",
+				"Italian",
+				"Spanish"
+			},
+		}
+	},
+	
+	-- Android permissions
+	android = 
+	{
+		-- versionCode = 2,
+		usesExpansionFile = false,
+		usesPermissions = 
+			{
+  				"android.permission.INTERNET",
+				"com.android.vending.BILLING",
+				"com.android.vending.CHECK_LICENSE",
+				"android.permission.WRITE_EXTERNAL_STORAGE",	
+  			},
+	},
+}

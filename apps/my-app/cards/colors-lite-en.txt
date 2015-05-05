@@ -1,0 +1,3 @@
+black	colors/black.jpg	colors/black.mp3
+blue	colors/blue.jpg	colors/blue.mp3
+brown	colors/brown.jpg	colors/brown.mp3

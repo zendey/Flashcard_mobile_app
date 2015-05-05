@@ -1,0 +1,3 @@
+apple	food-and-drinks/apple.jpg	food-and-drinks/apple.mp3
+asparagus	food-and-drinks/asparagus.jpg	food-and-drinks/asparagus.mp3
+avocado	food-and-drinks/avocado.jpg	food-and-drinks/avocado.mp3
